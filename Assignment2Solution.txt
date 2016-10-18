@@ -1,0 +1,36 @@
+public String reverseWords(String sentence)
+{
+    String reverseString = "";
+    
+    StringTokenizer st = new StringTokenizer(sentence);
+    
+    String word = "";
+    
+    //use a count variable to keep track of the difference
+    //between 1st and 2nd token
+    int count = 0;
+    
+    //use a string tokenizer to parse all the words in the sentence
+    while(st.hasMoreTokens())
+    {
+        word = st.nextToken();
+        
+        if(count > 0)
+        {
+            //add an empty character at the junction between 2 words
+            reverseString = reverseString + ' ';
+        }
+        else
+        {
+            count ++;
+        }
+        
+        //go through each character in the word backwards and add them sequentially
+        for(int j = word.length() - 1; j >= 0; j--)
+        {
+            reverseString = reverseString + word.charAt(j);
+        }
+    }
+    
+return reverseString;    
+}

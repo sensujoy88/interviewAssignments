@@ -1,0 +1,20 @@
+Problem 1:
+ 
+There are two types of bricks -- small and big. Each small brick is 1 inches long, and each big brick is 5 inches long. 
+ 
+You are given an X number of small bricks and Y number of big bricks. You are required to construct a row of bricks that is Z inches long.
+ 
+Create a function that will return "true", if the given number of X small bricks and Y big bricks are able fill the row of Z inches long. Otherwise, return "false".
+ 
+Example 1: Given 2 small bricks and 1 big brick and desired row length of 7, the function should return true.
+createRow(2, 1, 7) should return true
+ 
+Example 2: Given 2 small bricks and 3 big bricks, you cannot create a row of 13 inches.
+createRow(2, 3, 13) should return false
+ 
+Example 3: Given 4 small bricks and 2 big bricks, you can create a row of 12 inches.
+createRow(4, 2, 12) should return true
+ 
+ 
+createRow((smallCount, bigCount, rowLengthInInches) {
+}

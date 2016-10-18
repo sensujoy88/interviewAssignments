@@ -1,0 +1,7 @@
+Write a function that takes a sentence and reverses the characters of each word in it.
+ 
+reverseWords(sentence)
+ 
+Example: 
+reverseWords("full stack developer")  should return "lluf kcats repoleved"
+reverseWords("this is a sentence") should return "siht si a ecnetnes"
